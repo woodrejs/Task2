@@ -25,7 +25,8 @@
     font-size: 12px;
     font-weight: 600;
     color: $extra;
-    visibility: hidden;
+    align-self: end;
+    //visibility: hidden;
   }
   &__tick {
     position: absolute;

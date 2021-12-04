@@ -20,7 +20,7 @@
           <!-- main section -->
           <main class="main">
             <section class="main__cockpit">
-              <form class="form">
+              <form id="form" class="form">
                 <!-- title -->
                 <label id="titleInput" for="title" class="form__label">
                   <span class="form__title">tytuł</span>
@@ -53,7 +53,6 @@
                       />
                     </svg>
                   </div>
-                  <span class="form__message">error text</span>
                 </label>
                 <!-- author -->
                 <label id="authorInput" for="author" class="form__label">
@@ -92,12 +91,12 @@
                       />
                     </svg>
                   </div>
-                  <span class="form__message">error text</span>
                 </label>
                 <!-- categories -->
                 <label id="categoriesInput" for="categories" class="form__label">
                   <span class="form__title">Kategorie</span>
                   <select class="form__select" name="categories" id="categories">
+                    <option class="form__option" value=""></option>
                     <option class="form__option" value="historia">Historia</option>
                     <option value="fantastyka">Fantastyka</option>
                     <option value="romanse">Romanse</option>
@@ -128,34 +127,27 @@
                       <span>4</span>
                     </label>
                     <label class="form__radio">
-                      <input type="radio" name="priority" value="5" checked />
+                      <input type="radio" name="priority" value="5" />
                       <span>5</span>
                     </label>
                   </div>
                 </label>
                 <!-- submit -->
                 <div id="submitInput" class="form__submit">
-                  <input class="form__submit__btn shadow" type="submit" value="dodaj" />
+                  <input
+                    id="submitBtn"
+                    class="form__submit__btn shadow"
+                    type="submit"
+                    value="dodaj"
+                  />
                 </div>
+                <span class="form__message"></span>
               </form>
             </section>
             <section class="main__table">
               <div class="table__headers">
                 <div class="table__header table__header--sm">
                   <span class="table__title">lp</span>
-                  <svg
-                    width="15"
-                    height="15"
-                    viewBox="0 0 15 15"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="table__icon"
-                  >
-                    <path
-                      d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM7.5 9L4.5 6H10.5L7.5 9Z"
-                      fill="#0A94F1"
-                    />
-                  </svg>
                 </div>
                 <div class="table__header">
                   <span class="table__title">tytuł</span>
@@ -166,6 +158,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="table__icon"
+                    name="title"
                   >
                     <path
                       d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM7.5 9L4.5 6H10.5L7.5 9Z"
@@ -182,6 +175,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="table__icon"
+                    name="author"
                   >
                     <path
                       d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM7.5 9L4.5 6H10.5L7.5 9Z"
@@ -198,6 +192,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="table__icon"
+                    name="categories"
                   >
                     <path
                       d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM7.5 9L4.5 6H10.5L7.5 9Z"
@@ -214,6 +209,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     class="table__icon"
+                    name="priority"
                   >
                     <path
                       d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM7.5 9L4.5 6H10.5L7.5 9Z"
@@ -224,7 +220,7 @@
                 <div class="table__header table__header--sm"></div>
               </div>
               <div class="table__list">
-                <div class="table__item">
+                <!-- <div class="table__item">
                   <div class="table__cell table__cell--sm">
                     <span class="table__text">01</span>
                   </div>
@@ -287,7 +283,7 @@
                       />
                     </svg>
                   </div>
-                </div>
+                </div> -->
               </div>
             </section>
           </main>
