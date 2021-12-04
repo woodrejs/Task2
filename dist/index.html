@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Prototype Project</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <div class="box">
+          <!-- header section -->
+          <header class="header">
+            <div class="header__box">
+              <h1 class="header__box__title">zadanie II</h1>
+              <h3 class="header__box__subTitle">formularze</h3>
+            </div>
+          </header>
+          <!-- main section -->
+          <main class="main">
+            <section class="main__cockpit">
+              <form class="form">
+                <!-- title -->
+                <label id="titleInput" for="title" class="form__label">
+                  <span class="form__title">tytuł</span>
+                  <div class="form__box">
+                    <input class="form__textInput" type="text" name="title" id="title" />
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="form__cross"
+                    >
+                      <path
+                        d="M12.9098 12.9099C15.8399 9.97979 15.8399 5.23334 12.9098 2.30327C9.97976 -0.626807 5.23331 -0.626807 2.30323 2.30327C-0.626841 5.23334 -0.626841 9.97979 2.30323 12.9099C5.23331 15.8399 9.97976 15.8399 12.9098 12.9099ZM4.42455 9.72789L6.54587 7.60657L4.42455 5.48525L5.48521 4.42459L7.60653 6.54591L9.72785 4.42459L10.7885 5.48525L8.66719 7.60657L10.7885 9.72789L9.72785 10.7885L7.60653 8.66723L5.48521 10.7885L4.42455 9.72789Z"
+                        fill="#0A94F1"
+                      />
+                    </svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="form__tick"
+                    >
+                      <path
+                        d="M7.5 0C3.35813 0 0 3.35813 0 7.5C0 11.6419 3.35813 15 7.5 15C11.6419 15 15 11.6419 15 7.5C15 3.35813 11.6419 0 7.5 0ZM6.27563 10.625L3.46312 7.92562L4.335 7.02875L6.26 8.86437L10.6481 4.375L11.5369 5.25563L6.27563 10.625Z"
+                        fill="#0A94F1"
+                      />
+                    </svg>
+                  </div>
+                  <span class="form__message">error text</span>
+                </label>
+                <!-- author -->
+                <label id="authorInput" for="author" class="form__label">
+                  <span class="form__title">autor</span>
+                  <div class="form__box">
+                    <input
+                      type="text"
+                      class="form__textInput"
+                      name="author"
+                      id="author"
+                    />
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="form__cross"
+                    >
+                      <path
+                        d="M12.9098 12.9099C15.8399 9.97979 15.8399 5.23334 12.9098 2.30327C9.97976 -0.626807 5.23331 -0.626807 2.30323 2.30327C-0.626841 5.23334 -0.626841 9.97979 2.30323 12.9099C5.23331 15.8399 9.97976 15.8399 12.9098 12.9099ZM4.42455 9.72789L6.54587 7.60657L4.42455 5.48525L5.48521 4.42459L7.60653 6.54591L9.72785 4.42459L10.7885 5.48525L8.66719 7.60657L10.7885 9.72789L9.72785 10.7885L7.60653 8.66723L5.48521 10.7885L4.42455 9.72789Z"
+                        fill="#0A94F1"
+                      />
+                    </svg>
+                    <svg
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="form__tick"
+                    >
+                      <path
+                        d="M7.5 0C3.35813 0 0 3.35813 0 7.5C0 11.6419 3.35813 15 7.5 15C11.6419 15 15 11.6419 15 7.5C15 3.35813 11.6419 0 7.5 0ZM6.27563 10.625L3.46312 7.92562L4.335 7.02875L6.26 8.86437L10.6481 4.375L11.5369 5.25563L6.27563 10.625Z"
+                        fill="#0A94F1"
+                      />
+                    </svg>
+                  </div>
+                  <span class="form__message">error text</span>
+                </label>
+                <!-- categories -->
+                <label id="categoriesInput" for="categories" class="form__label">
+                  <span class="form__title">Kategorie</span>
+                  <select class="form__select" name="categories" id="categories">
+                    <option class="form__option" value="historia">Historia</option>
+                    <option value="fantastyka">Fantastyka</option>
+                    <option value="romanse">Romanse</option>
+                  </select>
+                </label>
+                <!-- priority -->
+                <label
+                  id="priorityInput"
+                  for="priority"
+                  class="form__label form__label--radio"
+                >
+                  <span class="form__title">priorytet</span>
+                  <div class="form__box">
+                    <label class="form__radio">
+                      <input id="priority" type="radio" name="priority" value="1" />
+                      <span>1</span>
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="priority" value="2" />
+                      <span>2</span>
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="priority" value="3" />
+                      <span>3</span>
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="priority" value="4" />
+                      <span>4</span>
+                    </label>
+                    <label class="form__radio">
+                      <input type="radio" name="priority" value="5" checked />
+                      <span>5</span>
+                    </label>
+                  </div>
+                </label>
+                <!-- submit -->
+                <div id="submitInput" class="form__submit">
+                  <input class="form__submit__btn shadow" type="submit" value="dodaj" />
+                </div>
+              </form>
+            </section>
+            <section class="main__table">
+              <div class="table__headers">
+                <div class="table__header table__header--sm">
+                  <span class="table__title">lp</span>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="table__icon"
+                  >
+                    <path
+                      d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM7.5 9L4.5 6H10.5L7.5 9Z"
+                      fill="#0A94F1"
+                    />
+                  </svg>
+                </div>
+                <div class="table__header">
+                  <span class="table__title">tytuł</span>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="table__icon"
+                  >
+                    <path
+                      d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM7.5 9L4.5 6H10.5L7.5 9Z"
+                      fill="#0A94F1"
+                    />
+                  </svg>
+                </div>
+                <div class="table__header">
+                  <span class="table__title">autor</span>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="table__icon"
+                  >
+                    <path
+                      d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM7.5 9L4.5 6H10.5L7.5 9Z"
+                      fill="#0A94F1"
+                    />
+                  </svg>
+                </div>
+                <div class="table__header">
+                  <span class="table__title">kategoria</span>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="table__icon"
+                  >
+                    <path
+                      d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM7.5 9L4.5 6H10.5L7.5 9Z"
+                      fill="#0A94F1"
+                    />
+                  </svg>
+                </div>
+                <div class="table__header table__header--sm">
+                  <span class="table__title">priorytet</span>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="table__icon"
+                  >
+                    <path
+                      d="M7.5 0C3.36 0 0 3.36 0 7.5C0 11.64 3.36 15 7.5 15C11.64 15 15 11.64 15 7.5C15 3.36 11.64 0 7.5 0ZM7.5 9L4.5 6H10.5L7.5 9Z"
+                      fill="#0A94F1"
+                    />
+                  </svg>
+                </div>
+                <div class="table__header table__header--sm"></div>
+              </div>
+              <div class="table__list">
+                <div class="table__item">
+                  <div class="table__cell table__cell--sm">
+                    <span class="table__text">01</span>
+                  </div>
+                  <div class="table__cell">
+                    <span class="table__text">przykladowy tytul</span>
+                  </div>
+                  <div class="table__cell">
+                    <span class="table__text">przykladowy autor</span>
+                  </div>
+                  <div class="table__cell">
+                    <span class="table__text">przykladowa kategoria</span>
+                  </div>
+                  <div class="table__cell table__cell--sm">
+                    <span class="table__text">01</span>
+                  </div>
+                  <div class="table__cell table__cell--sm">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="table__remove"
+                    >
+                      <path
+                        d="M12.9098 12.9099C15.8399 9.97979 15.8399 5.23334 12.9098 2.30327C9.97976 -0.626807 5.23331 -0.626807 2.30323 2.30327C-0.626841 5.23334 -0.626841 9.97979 2.30323 12.9099C5.23331 15.8399 9.97976 15.8399 12.9098 12.9099ZM4.42455 9.72789L6.54587 7.60657L4.42455 5.48525L5.48521 4.42459L7.60653 6.54591L9.72785 4.42459L10.7885 5.48525L8.66719 7.60657L10.7885 9.72789L9.72785 10.7885L7.60653 8.66723L5.48521 10.7885L4.42455 9.72789Z"
+                        fill="#0A94F1"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="table__item">
+                  <div class="table__cell table__cell--sm">
+                    <span class="table__text">01</span>
+                  </div>
+                  <div class="table__cell">
+                    <span class="table__text">przykladowy tytul</span>
+                  </div>
+                  <div class="table__cell">
+                    <span class="table__text">przykladowy autor</span>
+                  </div>
+                  <div class="table__cell">
+                    <span class="table__text">przykladowa kategoria</span>
+                  </div>
+                  <div class="table__cell table__cell--sm">
+                    <span class="table__text">01</span>
+                  </div>
+                  <div class="table__cell table__cell--sm">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="table__remove"
+                    >
+                      <path
+                        d="M12.9098 12.9099C15.8399 9.97979 15.8399 5.23334 12.9098 2.30327C9.97976 -0.626807 5.23331 -0.626807 2.30323 2.30327C-0.626841 5.23334 -0.626841 9.97979 2.30323 12.9099C5.23331 15.8399 9.97976 15.8399 12.9098 12.9099ZM4.42455 9.72789L6.54587 7.60657L4.42455 5.48525L5.48521 4.42459L7.60653 6.54591L9.72785 4.42459L10.7885 5.48525L8.66719 7.60657L10.7885 9.72789L9.72785 10.7885L7.60653 8.66723L5.48521 10.7885L4.42455 9.72789Z"
+                        fill="#0A94F1"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+          <!-- footer section -->
+          <footer class="footer">
+            <aside class="footer__author">maciej szczepański</aside>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>

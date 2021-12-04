@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Montserrat";
+
+  scrollbar-color: $grey $bck;
+  scrollbar-width: thin;
+}
+.container {
+  width: 100%;
+  background-color: $bck;
+}
+.box {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.shadow {
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}

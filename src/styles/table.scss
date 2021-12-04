@@ -1,0 +1,62 @@
+.table {
+  &__headers {
+    display: flex;
+    width: 100%;
+  }
+  &__header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1px;
+    padding: 7px 0;
+    background-color: $grey;
+
+    &--sm {
+      flex: 0.4;
+    }
+  }
+  &__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 10px;
+  }
+  &__icon {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__list {
+  }
+  &__item {
+    display: flex;
+    width: 100%;
+    background-color: $light;
+    margin: 1px 0;
+  }
+  &__cell {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1px;
+    padding: 7px 0;
+
+    &--sm {
+      flex: 0.4;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  &__remove {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  }
+}
