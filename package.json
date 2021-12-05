@@ -15,7 +15,9 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
-        "uuid": "^8.3.2"
+        "gsap": "^3.8.0",
+        "uuid": "^8.3.2",
+        "yup": "^0.32.11"
     },
     "devDependencies": {
         "@babel/core": "^7.15.8",
@@ -25,6 +27,7 @@
         "css-loader": "^6.5.0",
         "del-cli": "^4.0.1",
         "eslint": "^8.1.0",
+        "mini-css-extract-plugin": "^2.4.5",
         "sass": "^1.44.0",
         "sass-loader": "^12.3.0",
         "style-loader": "^3.2.1",
